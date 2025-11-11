@@ -1,11 +1,15 @@
-let targetNumber = Math.floor(Math.random() * 100) + 1; // Generate random number between 1 and 100
-let attempts = 0;
 let mistakeAttempts =0;
-let done = 0;
+let targetNumber;
+let attempts;
+let done;
 
 // Function to play the game
 function guessNumber()
 {
+    targetNumber = Math.floor(Math.random() * 100) + 1; // Generate random number between 1 and 100
+    attempts = 0;
+    done = 0;
+
     // Get user input using prompt
     let guess = parseInt(prompt(" Ab aap, 1 se 100 tak ke beech ek number guess kijiye:"));
     
@@ -37,8 +41,6 @@ function guessNumber()
                 if(mistakeAttempts<2)
                 {
                     alert("Are yr, kyu faltu masti ki!!! ab tereko shuruwat se khelna hoga.");
-                    attempts = 0;
-                    done = 0;
                     guessNumber();
                 }
                 else
@@ -57,8 +59,6 @@ function guessNumber()
                 if(mistakeAttempts<2)
                 {
                     alert("Are yr, kyu faltu masti ki!!! ab tereko shuruwat se khelna hoga.");
-                    attempts = 0;
-                    done = 0;
                     guessNumber();
                 }
                 else
