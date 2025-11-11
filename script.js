@@ -53,7 +53,7 @@ function guessNumber()
         else
         {
             guess = parseInt(prompt("Thoda chhota number try kar."));
-            if (isNaN(guess))
+            if (isNaN(guess) || (guess < 1 || guess > 100))
             {
                 mistakeAttempts++;
                 if(mistakeAttempts<2)
