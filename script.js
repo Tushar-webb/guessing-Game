@@ -42,6 +42,7 @@ function guessNumber()
                 {
                     alert("Are yr, kyu faltu masti ki!!! ab tereko shuruwat se khelna hoga.");
                     guessNumber();
+                    done++;
                 }
                 else
                 {
@@ -60,6 +61,7 @@ function guessNumber()
                 {
                     alert("Are yr, kyu faltu masti ki!!! ab tereko shuruwat se khelna hoga.");
                     guessNumber();
+                    done++;
                 }
                 else
                 {
